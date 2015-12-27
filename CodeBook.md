@@ -45,3 +45,27 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 
+## Getting and Cleaning Data
+
+There are 5 parts to the getting and cleaning of the data:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+## How ```run_analysis.R``` implements the above steps:
+
+* Loads both test and training data.
+* Loads the features and activity labels.
+* Merges the training and test data sets.
+* Sets names to variables.
+* Extracts Mean and Standard Deviations.
+* Adds subjectID and Activity to the required_columns data.
+* Creates a new data frame for just required columns.
+* Uses descriptive names to name activities
+* Updates labels to be more descriptive
+* Creates a tidy data set
+* Writes new data set to file
