@@ -20,7 +20,7 @@ The script performs the following:
 
 ## Notes
 
-A codebook is available in the repository and is named CodeBook.md.
+A codebook is available in the repository and is named ```CodeBook.md```.
 
 
 ## Dependencies
